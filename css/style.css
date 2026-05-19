@@ -1,0 +1,20 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(cards.css);
+
+
+:root {
+    --verde-escuro-bg: #145236;
+    --verde-escuro-form: #10291B;
+    --verde-claro-header: #1D6B45;
+    --verde-claro-bg: #EAF3DE;
+    --branco-fonte: #FFFFFF;
+    --preto-fonto: #000000;
+    --verde-bg-cards: #CBDFD4;
+    --verde-detalhes: #83BD9D;
+}
+
+body {
+    background-color: var(--verde-claro-bg);
+    font-family: Arial, sans-serif;
+}
