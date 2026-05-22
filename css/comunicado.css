@@ -1,0 +1,92 @@
+.container-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--verde-escuro-form);
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+/* Estilo das etiquetas (Labels) */
+label {
+    color: var(--branco-fonte); /* Verde bem claro/acinzentado */
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+/* Estilos gerais dos campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    background-color: var(--branco-fonte);
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+/* Fundo dos campos e placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #6b7280;
+}
+/* Linha com duas colunas (E-mail e Data) */
+.row {
+    display: flex;
+    gap: 20px;
+}
+.row .form-group {
+    flex: 1; /* Faz as colunas dividirem o espaço igualmente */
+}
+/* Botão de envio */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #e5f0e6; /* Fundo verde claro */
+    color: #1f472f; /* Texto verde escuro */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #d1e3d3; /* Efeito de hover levemente mais escuro */
+}
+/* Texto de rodapé */
+.footer-text {
+    color: #9ba8a0;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-container {
+        padding: 20px;
+    }
+}

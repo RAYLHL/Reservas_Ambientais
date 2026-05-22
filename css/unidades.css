@@ -1,0 +1,91 @@
+.unidade{
+    width: 100%;
+    background-color: var(--verde-escuro-form);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.cidade{
+    margin-left: 30px;
+    font-size: 18px;
+    color: var(--branco-fonte);
+}
+
+.unidade-info{
+    padding: 30px;
+    max-width: 1000px;
+    margin-left: 30px;
+}
+
+.unidade-info p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.descricao{
+    max-width: 1000px;
+}
+
+.unidade-info button{
+    margin-top: 10px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--verde-claro-bg);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--verde-escuro-bg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.unidade-info button:hover{
+    opacity: 0.9;
+}
+
+.comunicados{
+    margin-top: 40px;
+    padding: 0 60px;
+    font-family: Arial, sans-serif;
+}
+
+.comunicados h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+.comunicado-card{
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--verde-bg-cards);
+    border: 1px solid var(--preto-fonte);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.comunicado-card:hover{
+    transform: translateY(-2px);
+}
+
+.comunicado-card h3{
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+.comunicado-card p{
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #333;
+}
+
+.status{
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: var(--verde-detalhes);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #123;
+}

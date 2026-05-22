@@ -1,6 +1,9 @@
 @import url(reset.css);
 @import url(header.css);
 @import url(cards.css);
+@import url(unidades.css);
+@import url(comunicado.css);
+@import url(hero.css);
 
 
 :root {
@@ -9,7 +12,7 @@
     --verde-claro-header: #1D6B45;
     --verde-claro-bg: #EAF3DE;
     --branco-fonte: #FFFFFF;
-    --preto-fonto: #000000;
+    --preto-fonte: #000000;
     --verde-bg-cards: #CBDFD4;
     --verde-detalhes: #83BD9D;
 }
