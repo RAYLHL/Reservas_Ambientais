@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Ambientais</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo do TeamMates personalizado">
+        </div>
+        <ul class="nav-bar">
+            <li><a href="home.html" class="ativo">Início</a></li>
+            <li><a href="index.html">Unidades</a></li>
+            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+        </ul>
+    </header>
+    
+    <div class="header-nav">
+
+        <a href="#" class="voltar">
+            <img src="img/icon-back.png" alt="ícone de voltar">
+            Voltar ao Início
+        </a>
+        <h1>
+            Nova comunicação
+        </h1>
+        <p class="cidade">
+           Reporte um problema ou envie uma sugestão ás autoridades responsáveis
+        </p>
+    </div>
+
+
+    <div class="cadastro-container" id="cadastro-container">
+
+    <h2>Identifique-se para enviar um comunicado</h2>
+
+    <p>
+        Para garantir a autenticidade das comunicações, é necessário realizar um cadastro simples.
+    </p>
+
+    <div class="form-group">
+        <label>Nome Completo</label>
+        <input type="text" id="nomeUsuario">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="emailUsuario">
+    </div>
+
+    <button id="btnCadastrar">
+        Continuar
+    </button>
+
+    </div>
+
+    <div id="form-comunicado" style="display:none;">
+        <div class="container-geral">
+            <div class="form-container">
+                <form action="#" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="unidade">Unidade de conservação</label>
+                        <input type="text" id="unidade" name="unidade" value="Parque estadual das Araucariais">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="titulo">Titulo da comunicação</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Ex: Descreva o problema">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição detalhada</label>
+                        <textarea id="descricao" name="descricao" rows="4"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="email">Seu email</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data e hora</label>
+                            <input type="text" id="data" name="data" placeholder="XX/XX/XXXX">
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar Comunicado</button>
+                    
+                    <p class="footer-text">Sua comunicação será encaminhada aos administradores responsáveis pela unidade selecionada</p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="js/cadastro.js"></script>
+
+</body>
+</html>
