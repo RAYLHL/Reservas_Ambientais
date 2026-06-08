@@ -139,6 +139,25 @@ button:hover {
     text-align: center;
     margin: 0;
 }
+
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: #f5f2ed;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 8px;
+
+    border-top: 4px solid #1daa10;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    display: none;
+
+    z-index: 999;
+}
 /* Responsividade para telas menores (celulares) */
 @media (max-width: 600px) {
     .row {
