@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas Ambientais</title>
+    <title>Enviar Comunicado</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,9 +15,9 @@
         </div>
 
         <ul class="nav-bar">
-            <li><a href="home.html" class="ativo">Início</a></li>
+            <li><a href="home.html">Início</a></li>
             <li><a href="index.html">Unidades</a></li>
-            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+            <li><a href="enviar-comunicado.html" class="ativo">Enviar Comunicado</a></li>
         </ul>
     </header>
 
@@ -27,100 +27,53 @@
             Voltar ao Início
         </a>
 
-        <h1>Nova comunicação</h1>
+        <h1>Enviar Comunicado</h1>
 
         <p class="cidade">
-            Reporte um problema ou envie uma sugestão às autoridades responsáveis
+            Informe seu ID para registrar uma nova comunicação.
         </p>
     </div>
 
-    <!-- CADASTRO -->
-    <div class="cadastro-container" id="cadastro-container">
+    <!-- IDENTIFICAÇÃO -->
 
-        <h2>Identifique-se para enviar um comunicado</h2>
+    <div class="cadastro-container" id="identificacao-container">
+
+        <h2>Identificação</h2>
 
         <p>
-            Para garantir a autenticidade das comunicações,
-            é necessário realizar um cadastro simples.
+            Digite o ID recebido durante o cadastro.
         </p>
 
         <div class="form-group">
-            <label>Nome Completo</label>
-            <input type="text" id="nomeUsuario">
+            <label for="idUsuario">
+                ID de Identificação
+            </label>
+
+            <input
+                type="text"
+                id="idUsuario"
+                placeholder="Ex: 15">
         </div>
 
-        <div class="row">
-
-            <div class="form-group" style="flex: 2;">
-                <label>Email</label>
-                <input
-                    type="email"
-                    id="emailUsuario"
-                    placeholder="exemplo@email.com">
-            </div>
-
-            <div class="form-group" style="flex: 1;">
-                <label>Telefone</label>
-                <input
-                    type="text"
-                    id="telefoneUsuario"
-                    placeholder="(54) 94002-8922">
-            </div>
-
-        </div>
-
-        <button id="btnCadastrar">
+        <button id="btnValidar">
             Continuar
-        </button>
-
-         <p class="login-link">
-            Já possui um ID de identificação?
-            <a href="enviar-comunicado.html">
-                Enviar novo comunicado
-            </a>
-        </p>
-
-    </div>
-
-    <!-- SUCESSO -->
-    <div id="resultadoCadastro" style="display:none;">
-
-        <h2>Cadastro realizado com sucesso!</h2>
-
-        <p>
-            Seu ID é:
-        </p>
-
-        <strong id="idGerado"></strong>
-
-        <p>
-            Guarde este número para realizar futuras comunicações.
-        </p>
-
-        <button
-            type="button"
-            id="btnAbrirComunicado"
-            class="btn-comunicado">
-
-            Continuar e Enviar Comunicado
-
         </button>
 
     </div>
 
     <!-- FORMULÁRIO -->
+
     <div id="form-comunicado" style="display:none;">
 
         <div class="container-geral">
 
             <div class="form-container">
 
-                <form action="#" method="POST">
+                <form id="formComunicado">
 
-                    <!-- ID DO USUÁRIO -->
                     <input
                         type="hidden"
-                        id="idUsuario"
+                        id="idUsuarioHidden"
                         name="idUsuario">
 
                     <div class="form-group">
@@ -131,8 +84,7 @@
                         <input
                             type="text"
                             id="unidade"
-                            name="unidade"
-                            value="Parque estadual das Araucariais">
+                            name="unidade">
                     </div>
 
                     <div class="form-group">
@@ -179,7 +131,7 @@
                             </label>
 
                             <input
-                                type="dat"
+                                type="date"
                                 id="data"
                                 name="data"
                                 placeholder="XX/XX/XXXX">
@@ -192,9 +144,7 @@
                     </button>
 
                     <p class="footer-text">
-                        Sua comunicação será encaminhada aos
-                        administradores responsáveis pela unidade
-                        selecionada.
+                        Sua comunicação será encaminhada aos administradores responsáveis.
                     </p>
 
                 </form>
@@ -205,7 +155,7 @@
 
     </div>
 
-    <script src="js/cadastro.js"></script>
+    <script src="js/enviar-comunicado.js"></script>
 
 </body>
 </html>

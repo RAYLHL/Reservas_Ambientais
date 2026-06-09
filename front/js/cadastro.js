@@ -2,15 +2,21 @@
 document
     .getElementById("telefoneUsuario")
     .addEventListener("input", (e) => {
+
         let valor = e.target.value.replace(/\D/g, "");
 
-        if (valor.length > 11) valor = valor.slice(0, 11);
+        if (valor.length > 11) {
+            valor = valor.slice(0, 11);
+        }
 
         if (valor.length <= 10) {
+
             valor = valor
                 .replace(/^(\d{2})(\d)/, "($1) $2")
                 .replace(/(\d{4})(\d)/, "$1-$2");
+
         } else {
+
             valor = valor
                 .replace(/^(\d{2})(\d)/, "($1) $2")
                 .replace(/(\d{5})(\d)/, "$1-$2");
@@ -19,6 +25,8 @@ document
         e.target.value = valor;
     });
 
+
+// CADASTRO DO USUÁRIO
 document
     .getElementById("btnCadastrar")
     .addEventListener("click", async () => {
@@ -72,17 +80,30 @@ document
                 );
             }
 
+            // Esconde formulário de cadastro
             document
                 .getElementById("cadastro-container")
                 .style.display = "none";
 
+            // Mostra tela de sucesso
             document
                 .getElementById("resultadoCadastro")
                 .style.display = "block";
 
+            // Mostra ID gerado
             document
                 .getElementById("idGerado")
                 .textContent = dados.id;
+
+            // Preenche automaticamente o email
+            document
+                .getElementById("email")
+                .value = email;
+
+            // Guarda o ID para enviar junto no comunicado
+            document
+                .getElementById("idUsuario")
+                .value = dados.id;
 
         } catch (erro) {
 
@@ -92,4 +113,25 @@ document
                 "Erro ao realizar cadastro. Tente novamente."
             );
         }
+    });
+
+
+// ABRIR FORMULÁRIO DE COMUNICADO
+document
+    .getElementById("btnAbrirComunicado")
+    .addEventListener("click", () => {
+
+        document
+            .getElementById("resultadoCadastro")
+            .style.display = "none";
+
+        document
+            .getElementById("form-comunicado")
+            .style.display = "block";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     });

@@ -1,170 +1,228 @@
-/* BLOCO DE CADASTRO */
+/* =========================
+   CADASTRO
+========================= */
 
-.cadastro-container{
+.cadastro-container,
+#resultadoCadastro,
+.form-container {
     background-color: var(--verde-escuro-form);
-
     padding: 30px 40px;
-
     border-radius: 8px;
-
     width: 100%;
     max-width: 800px;
-
     margin: 30px auto;
-
     box-shadow: 0 4px 10px rgba(0,0,0,.2);
 }
 
-.cadastro-container h2{
+.cadastro-container h2,
+#resultadoCadastro h2 {
     color: var(--branco-fonte);
-
-    margin-bottom: 10px;
-
     text-align: center;
+    margin-bottom: 15px;
 }
 
-.cadastro-container p{
+.cadastro-container p,
+#resultadoCadastro p {
     color: #9ba8a0;
-
     text-align: center;
-
-    margin-bottom: 30px;
-
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-.cadastro-container button{
+/* =========================
+   CONTAINER DO FORMULÁRIO
+========================= */
+
+.container-geral {
     width: 100%;
-    padding: 14px;
-
-    background-color: #e5f0e6;
-
-    color: #1f472f;
-
-    border: none;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: background-color .3s;
-}
-
-.cadastro-container button:hover{
-    background-color: #d1e3d3;
-}
-
-.container-geral{
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 20px 0; 
 }
-.form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--verde-escuro-form);
-    padding: 30px 40px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-}
+/* =========================
+   CAMPOS
+========================= */
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-/* Estilo das etiquetas (Labels) */
+
 label {
-    color: var(--branco-fonte); /* Verde bem claro/acinzentado */
+    color: var(--branco-fonte);
     font-size: 14px;
     margin-bottom: 8px;
 }
-/* Estilos gerais dos campos de entrada */
+
 input[type="text"],
 input[type="email"],
+input[type="date"],
 textarea {
-    padding: 12px 16px;
-    border-radius: 6px;
-    border: none;
-    font-size: 14px;
-    background-color: #f0f0f0;
-    color: #333;
     width: 100%;
     box-sizing: border-box;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 14px;
     font-family: inherit;
 }
-/* Fundo dos campos e placeholder */
+
 input::placeholder,
 textarea::placeholder {
     color: #6b7280;
 }
-/* Linha com duas colunas (E-mail e Data) */
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =========================
+   LINHAS
+========================= */
+
 .row {
     display: flex;
     gap: 20px;
 }
+
 .row .form-group {
-    flex: 1; /* Faz as colunas dividirem o espaço igualmente */
+    flex: 1;
 }
-/* Botão de envio */
-button {
+
+/* =========================
+   BOTÕES
+========================= */
+
+button,
+.btn-comunicado {
     width: 100%;
     padding: 14px;
-    background-color: #e5f0e6; /* Fundo verde claro */
-    color: #1f472f; /* Texto verde escuro */
+    background-color: var(--btn-form);
+    color: #1f472f;
     border: none;
     border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    transition: background-color 0.3s ease;
+    transition: .3s;
 }
-button:hover {
-    background-color: #d1e3d3; /* Efeito de hover levemente mais escuro */
+
+button:hover,
+.btn-comunicado:hover {
+    background-color: var(--btn-form);
 }
-/* Texto de rodapé */
+
+.btn-comunicado {
+    margin-top: 20px;
+}
+
+/* =========================
+   RESULTADO DO CADASTRO
+========================= */
+
+#resultadoCadastro {
+    text-align: center;
+}
+
+#idGerado {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--verde-claro-header);
+    background-color: var(--verde-claro-bg);
+    border: 3px dashed var(--verde-detalhes);
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+#resultadoCadastro p:last-of-type {
+    margin-top: 20px;
+}
+
+/* =========================
+   RODAPÉ DO FORMULÁRIO
+========================= */
+
 .footer-text {
     color: #9ba8a0;
     font-size: 12px;
     text-align: center;
-    margin: 0;
+    margin-top: 15px;
 }
+
+.login-link {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #9ba8a0;
+}
+
+.login-link a {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--verde-claro-header);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.login-link a:hover {
+    border-bottom: 1px solid var(--verde-claro-header);
+    transform: translateY(-1px);
+}
+
+/* =========================
+   NOTIFICAÇÃO
+========================= */
 
 .notificacao {
     position: fixed;
     top: 20px;
     right: 20px;
-
     background: #f5f2ed;
     color: #000;
     padding: 15px 25px;
     border-radius: 8px;
-
     border-top: 4px solid #1daa10;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
     display: none;
-
     z-index: 999;
 }
-/* Responsividade para telas menores (celulares) */
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    #idGerado {
+        font-size: 3rem;
+    }
+
+}
+
 @media (max-width: 600px) {
+
     .row {
         flex-direction: column;
         gap: 0;
     }
-    .form-container {
+
+    .cadastro-container,
+    .form-container,
+    #resultadoCadastro {
         padding: 20px;
     }
+
+    #idGerado {
+        font-size: 2.5rem;
+    }
+
 }
