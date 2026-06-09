@@ -1,0 +1,11 @@
+1. Indivíduo se cadastra
+        ↓
+2. Sistema salva o indivíduo
+        ↓
+3. Indivíduo visualiza as Unidades de Conservação existentes
+        ↓
+4. Escolhe uma unidade
+        ↓
+5. Cria uma comunicação
+        ↓
+6. Comunicação fica vinculada ao indivíduo e à unidade escolhida

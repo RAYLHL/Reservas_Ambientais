@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Ambientais</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo do TeamMates">
+        </div>
+        <ul class="nav-bar">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="index.html">Unidades</a></li>
+            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+        </ul>
+    </header>
+
+    <section class="unidade">
+        <div class="header-nav">
+            <a href="home.html" class="voltar">
+                <img src="img/icon-back.png" alt="Voltar">  
+                Voltar ao Início
+            </a>
+            <h1 id="nome-unidade"></h1>
+            <p class="cidade" id="cidade-unidade"></p>
+        </div>
+        <div class="unidade-info">
+            <p>
+                <strong>Data da Criação:</strong>
+                <span id="data-criacao"></span>
+            </p>
+            <p>
+                <strong>Instituição responsável:</strong>
+                <span id="instituicao"></span>
+            </p>
+            <p class="descricao">
+                <strong>Detalhes sobre o parque / curiosidade:</strong>
+                <span id="descricao-unidade"></span>
+            </p>
+            <button id="btn-comunicado">
+                Enviar comunicado para essa unidade
+            </button>
+        </div>
+    </section>
+
+    <section class="comunicados">
+        <h2 id="titulo-comunicados">
+            Comunicados da unidade
+        </h2>
+        <div id="lista-comunicados">
+        </div>
+    </section>
+
+    <script src="js/unidade.js"></script>
+
+</body>
+</html>
