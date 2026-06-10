@@ -1,0 +1,28 @@
+.toast-custom {
+    position: relative;
+    overflow: hidden;
+}
+
+.toast-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: rgba(255,255,255,0.8);
+
+    animation: barraTempo 3s linear forwards;
+}
+
+@keyframes barraTempo {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}

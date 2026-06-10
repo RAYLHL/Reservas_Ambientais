@@ -41,17 +41,17 @@ document
             document.getElementById("telefoneUsuario").value.trim();
 
         if (!nome || !email || !telefone) {
-            alert("Preencha todos os campos.");
+            mostrarToast("Preencha todos os campos.");
             return;
         }
 
         if (nome.length < 5 || nome.length > 60) {
-            alert("Nome completo deve ter entre 5 e 60 caracteres.");
+            mostrarToast("Nome completo deve ter entre 5 e 60 caracteres.", "aviso");
             return;
         }
 
         if (email.length < 9 || email.length > 60) {
-            alert("Email deve ter entre 9 e 60 caracteres.");
+            mostrarToast("Email deve ter entre 9 e 60 caracteres.", "aviso");
             return;
         }
 
@@ -109,9 +109,7 @@ document
 
             console.error(erro);
 
-            alert(
-                "Erro ao realizar cadastro. Tente novamente."
-            );
+            mostrarToast("Erro ao realizar cadastro. Tente novamente.", "erro");
         }
     });
 

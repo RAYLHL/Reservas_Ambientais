@@ -6,7 +6,7 @@ document
             document.getElementById("idUsuario").value.trim();
 
         if (!id) {
-            alert("Informe seu ID.");
+            mostrarToast("Informe seu ID.");
             return;
         }
 
@@ -34,7 +34,7 @@ document
 
         } catch {
 
-            alert("ID não encontrado.");
+            mostrarToast("ID não encontrado.", "erro");
 
         }
 

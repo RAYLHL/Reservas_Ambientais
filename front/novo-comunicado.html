@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas Ambientais</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -102,7 +104,7 @@
             id="btnAbrirComunicado"
             class="btn-comunicado">
 
-            Continuar e Enviar Comunicado
+            Continuar
 
         </button>
 
@@ -123,17 +125,35 @@
                         id="idUsuario"
                         name="idUsuario">
 
-                    <div class="form-group">
-                        <label for="unidade">
-                            Unidade de conservação
-                        </label>
+                        <div class="form-group">
+                            <label for="unidade">
+                                Unidade de conservação
+                            </label>
 
-                        <input
-                            type="text"
-                            id="unidade"
-                            name="unidade"
-                            value="Parque estadual das Araucariais">
-                    </div>
+                            <select id="unidade" name="unidade">
+
+                                <option value="">
+                                    Selecione uma unidade
+                                </option>
+
+                                <option value="Parque Estadual das Araucárias">
+                                    Parque Estadual das Araucárias
+                                </option>
+
+                                <option value="Reserva Estadual da Canela Preta">
+                                    Reserva Estadual da Canela Preta
+                                </option>
+
+                                <option value="Parque Estadual Acaraí">
+                                    Parque Estadual Acaraí
+                                </option>
+
+                                <option value="Reserva Estadual do Sassafrás">
+                                    Reserva Estadual do Sassafrás
+                                </option>
+
+                            </select>
+                        </div>
 
                     <div class="form-group">
                         <label for="titulo">
@@ -179,7 +199,7 @@
                             </label>
 
                             <input
-                                type="dat"
+                                type="date"
                                 id="data"
                                 name="data"
                                 placeholder="XX/XX/XXXX">
@@ -196,16 +216,14 @@
                         administradores responsáveis pela unidade
                         selecionada.
                     </p>
-
                 </form>
-
             </div>
-
         </div>
 
     </div>
-
+    <script src="js/notificacoes.js"></script>
+    <script src="js/novo-comunicado.js"></script>
     <script src="js/cadastro.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
