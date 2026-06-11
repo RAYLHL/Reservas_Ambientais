@@ -28,7 +28,40 @@
     line-height: 1.5;
     margin-bottom: 20px;
 }
+.cadastro-container {
+    position: relative;
+}
 
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-voltar:hover {
+    background: var(--verde-escuro-bg);
+}
+
+.btn-voltar img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
 /* =========================
    CONTAINER DO FORMULÁRIO
 ========================= */

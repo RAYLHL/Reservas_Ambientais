@@ -1,110 +1,137 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas Ambientais</title>
-
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-</head>
-<body>
-
+href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+ </head>
+ <body>
     <header class="cabecalho">
         <div class="logo">
-            <img src="img/logo.png" alt="logo do TeamMates">
+            <img src="img/logo.png" alt="logo do TeamMates personalizado">
         </div>
-
         <ul class="nav-bar">
-            <li><a href="home.html">Início</a></li>
-            <li><a href="index.html">Unidades</a></li>
+            <li><a href="home.html" class="ativo">Início</a></li>
+            <li><a href="unidades.html">Unidades</a></li>
             <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
         </ul>
     </header>
+    
+    <section class="hero">
+        <h1>Unidades de Conservação de SC</h1>
+        <h2>Conheça as áreas protegidas da zona costeira catarinense e contribua para a sua <br> preservação </h2>
+      <div class="container-search">
 
-    <section class="unidade">
+        <div class="input-search">
+            <input type="text" placeholder="Buscar por nome ou município">
 
-        <div class="header-nav">
-
-            <a href="home.html" class="voltar">
-                <img src="img/icon-back.png" alt="Voltar">
-                Voltar ao Início
-            </a>
-
-            <h1 id="nome-unidade"></h1>
-
-            <p class="cidade" id="cidade-unidade"></p>
-
-        </div>
-
-        <div class="unidade-info">
-
-            <p>
-                <strong>Data da Criação:</strong>
-                <span id="data-criacao"></span>
-            </p>
-
-            <p>
-                <strong>Instituição responsável:</strong>
-                <span id="instituicao"></span>
-            </p>
-
-            <p class="descricao">
-                <strong>Detalhes sobre o parque / curiosidade:</strong>
-                <span id="descricao-unidade"></span>
-            </p>
-
-            <button id="btn-comunicado">
-                Enviar comunicado para essa unidade
+            <button>
+                <img src="img/icon-pesquisar.png" alt="">
             </button>
-
         </div>
 
+        </div>
     </section>
 
-    <section class="comunicados">
+   <section class="cards">
 
-        <h2 id="titulo-comunicados">
-            Comunicados da unidade
-        </h2>
+    <div class="cards-titulo"> <h2>4 Unidades Encontradas</h2> </div>
 
-        <div id="lista-comunicados">
+    <div class="cards-container">
 
-            <!-- Exemplo de card -->
-            <div class="comunicado-card">
-
-                <div class="comunicado-topo">
-
-                    <div class="usuario-info">
-
-                        <img src="img/user.png" alt="Usuário">
-
-                        <div>
-                            <h4>Nome do usuário</h4>
-                            <span>10/06/2026</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <h3>Título do comunicado</h3>
-
-                <p>
-                    Descrição do comunicado.
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="img/Araucárias.webp" alt="Imagem">
+            <div class="card-content">
+                <h3 class="card-nome">
+                    Parque Estadual das Araucárias
+                </h3>
+                <p class="card-cidade">
+                    São Domingos 
                 </p>
-
+                <span class="tag">
+                    Parque
+                </span>
+                <button>
+                    <a href="unidade_Araucarias.html">
+                        Ver detalhes
+                        <img src="img/icon-seta.png" alt="">
+                    </a>
+                </button>
             </div>
-
         </div>
 
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="img/Canela Preta.jpg" alt="Imagem">
+            <div class="card-content">
+                <h3 class="card-nome">
+                    Reserva Estadual da Canela Preta
+                </h3>
+                <p class="card-cidade">
+                    Florianópolis 
+                </p>
+                <span class="tag">
+                    Reserva
+                </span>
+                <button>
+                    <a href="unidade_CanelaPreta.html">
+                        Ver detalhes
+                        <img src="img/icon-seta.png" alt="">
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="img/Acaraí.jpeg" alt="Imagem">
+            <div class="card-content">
+                <h3 class="card-nome">
+                    Parque Estadual Acaraí
+                </h3>
+                <p class="card-cidade">
+                    Joinville 
+                </p>
+                <span class="tag">
+                    Parque
+                </span>
+                <button>
+                    <a href="unidade_Acarai.html">
+                        Ver detalhes
+                        <img src="img/icon-seta.png" alt="">
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <img src="img/Sassafrás.png" alt="Imagem">
+            <div class="card-content">
+                <h3 class="card-nome">
+                   Reserva Estadual do Sassafrás
+                </h3>
+                <p class="card-cidade">
+                    Balneário Camboriú 
+                </p>
+                <span class="tag">
+                    Reserva
+                </span>
+                <button>
+                    <a href="unidade_Sassafras.html">
+                        Ver detalhes
+                        <img src="img/icon-seta.png" alt="">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
     </section>
-
-    <script src="js/notificacoes.js"></script>
-    <script src="js/unidade1.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-</body>
-</html>
+ </body>
+ </html>   

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Ambientais</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo do TeamMates">
+        </div>
+
+        <ul class="nav-bar">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="unidades.html">Unidades</a></li>
+            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+        </ul>
+    </header>
+
+    <section class="unidade">
+
+        <div class="header-nav">
+
+            <a href="unidades.html" class="voltar">
+                <img src="img/icon-back.png" alt="Voltar">
+                Voltar 
+            </a>
+
+            <h1 id="nome-unidade">Parque Estadual das Araucárias</h1>
+
+            <p class="cidade" id="cidade-unidade">São Domingos - SC</p>
+
+        </div>
+
+        <div class="unidade-info">
+
+            <p>
+        <strong>Data da Criação:</strong>
+        <span id="data-criacao">30 de maio de 2003</span>
+            </p>
+
+            <p>
+                <strong>Instituição responsável:</strong>
+                <span id="instituicao">Instituto do Meio Ambiente de Santa Catarina (IMA)</span>
+            </p>
+
+            <p class="descricao">
+                <strong>Detalhes sobre o parque / curiosidade:</strong>
+                <span id="descricao-unidade">
+                    Localizado nos municípios de São Domingos e Galvão, no oeste de Santa Catarina, o Parque Estadual das Araucárias possui cerca de 612 hectares e foi criado para proteger remanescentes da Floresta Ombrófila Mista (Floresta de Araucárias). O parque abriga espécies ameaçadas de extinção, como a araucária (Araucaria angustifolia) e o xaxim (Dicksonia sellowiana), além de proteger nascentes e cursos d'água importantes para a região. Também conta com trilhas ecológicas e estrutura para visitação e pesquisas científicas.
+                </span>
+            </p>
+
+            <button id="btn-comunicado">
+                Enviar comunicado para essa unidade
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="comunicados">
+
+        <h2 id="titulo-comunicados">
+            Comunicados da unidade
+        </h2>
+
+        <div id="lista-comunicados">
+
+            <!-- Exemplo de card -->
+            <div class="comunicado-card">
+
+                <div class="comunicado-topo">
+
+                    <div class="usuario-info">
+
+                        <img src="img/user.png" alt="Usuário">
+
+                        <div>
+                            <h4>Nome do usuário</h4>
+                            <span>10/06/2026</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Título do comunicado</h3>
+
+                <p>
+                    Descrição do comunicado.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/notificacoes.js"></script>
+    <script src="js/unidade1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>

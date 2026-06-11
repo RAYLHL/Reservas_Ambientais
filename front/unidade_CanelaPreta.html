@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Ambientais</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo do TeamMates">
+        </div>
+
+        <ul class="nav-bar">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="unidades.html">Unidades</a></li>
+            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+        </ul>
+    </header>
+
+    <section class="unidade">
+
+        <div class="header-nav">
+
+            <a href="unidades.html" class="voltar">
+                <img src="img/icon-back.png" alt="Voltar">
+                Voltar 
+            </a>
+
+            <h1 id="nome-unidade">Reserva Estadual da Canela Preta</h1>
+
+            <p class="cidade" id="cidade-unidade">São José - SC</p>
+
+        </div>
+
+        <div class="unidade-info">
+
+            <p>
+        <strong>Data da Criação:</strong>
+        <span id="data-criacao">20 de junho de 1980</span>
+            </p>
+
+            <p>
+                <strong>Instituição responsável:</strong>
+                <span id="instituicao">Instituto do Meio Ambiente de Santa Catarina (IMA)</span>
+            </p>
+
+            <p class="descricao">
+                <strong>Detalhes sobre o parque / curiosidade:</strong>
+                <span id="descricao-unidade">
+                    Localizada nos municípios de Botuverá e Nova Trento, a Reserva Biológica Estadual da Canela Preta possui cerca de 1.899 hectares e foi criada para proteger a canela-preta (Ocotea catharinensis), espécie de árvore ameaçada de extinção que dá nome à unidade. A reserva abriga remanescentes preservados da Mata Atlântica, mais de 170 espécies de aves e diversas espécies de bromélias, orquídeas e palmito-juçara. Por se tratar de uma Reserva Biológica, a área não é aberta à visitação pública, sendo destinada principalmente à conservação ambiental e à pesquisa científica.
+                </span>
+            </p>
+
+
+            <button id="btn-comunicado">
+                Enviar comunicado para essa unidade
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="comunicados">
+
+        <h2 id="titulo-comunicados">
+            Comunicados da unidade
+        </h2>
+
+        <div id="lista-comunicados">
+
+            <!-- Exemplo de card -->
+            <div class="comunicado-card">
+
+                <div class="comunicado-topo">
+
+                    <div class="usuario-info">
+
+                        <img src="img/user.png" alt="Usuário">
+
+                        <div>
+                            <h4>Nome do usuário</h4>
+                            <span>10/06/2026</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Título do comunicado</h3>
+
+                <p>
+                    Descrição do comunicado.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/notificacoes.js"></script>
+    <script src="js/unidade1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>

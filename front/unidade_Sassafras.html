@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Ambientais</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo do TeamMates">
+        </div>
+
+        <ul class="nav-bar">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="unidades.html">Unidades</a></li>
+            <li><a href="novo-comunicado.html">Enviar Comunicado</a></li>
+        </ul>
+    </header>
+
+    <section class="unidade">
+
+        <div class="header-nav">
+
+            <a href="unidades.html" class="voltar">
+                <img src="img/icon-back.png" alt="Voltar">
+                Voltar 
+            </a>
+
+            <h1 id="nome-unidade">Reserva Estadual do Sassafrás</h1>
+
+            <p class="cidade" id="cidade-unidade">Balneário Camboriú - SC</p>
+
+        </div>
+
+        <div class="unidade-info">
+
+            <p>
+        <strong>Data da Criação:</strong>
+        <span id="data-criacao">04 de fevereiro de 1977</span>
+            </p>
+
+            <p>
+                <strong>Instituição responsável:</strong>
+                <span id="instituicao">Instituto do Meio Ambiente de Santa Catarina (IMA)</span>
+            </p>
+
+            <p class="descricao">
+                <strong>Detalhes sobre o parque / curiosidade:</strong>
+                <span id="descricao-unidade">
+                    Localizada entre os municípios de Benedito Novo e Doutor Pedrinho, a Reserva Biológica Estadual do Sassafrás possui aproximadamente 5.229 hectares. A unidade foi criada para proteger a canela-sassafrás (Ocotea odorifera), espécie nativa ameaçada pela exploração excessiva. A reserva abriga importantes remanescentes da Mata Atlântica, diversas nascentes que abastecem a bacia do Rio Itajaí e uma rica biodiversidade, incluindo espécies raras como a anta, o queixada e o papagaio-do-peito-roxo. Por ser uma Reserva Biológica, o acesso é restrito a pesquisas científicas e atividades de conservação ambiental.
+                </span>
+            </p>
+
+            <button id="btn-comunicado">
+                Enviar comunicado para essa unidade
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="comunicados">
+
+        <h2 id="titulo-comunicados">
+            Comunicados da unidade
+        </h2>
+
+        <div id="lista-comunicados">
+
+            <!-- Exemplo de card -->
+            <div class="comunicado-card">
+
+                <div class="comunicado-topo">
+
+                    <div class="usuario-info">
+
+                        <img src="img/user.png" alt="Usuário">
+
+                        <div>
+                            <h4>Nome do usuário</h4>
+                            <span>10/06/2026</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Título do comunicado</h3>
+
+                <p>
+                    Descrição do comunicado.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/notificacoes.js"></script>
+    <script src="js/unidade1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>
