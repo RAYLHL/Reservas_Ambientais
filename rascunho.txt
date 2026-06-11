@@ -9,3 +9,19 @@
 5. Cria uma comunicação
         ↓
 6. Comunicação fica vinculada ao indivíduo e à unidade escolhida
+
+instalar os modulos
+npm i express mysql2 dotenv nodemon cors
+
+rodar em:
+npm start dev
+
+verificar o db.js
+
+1	Reserva Verde
+3	Parque Nacional Araucárias
+4	Reserva Mata Atlântica
+5	Reserva Estadual do Sassafrás
+
+
+fazer requisição do id 

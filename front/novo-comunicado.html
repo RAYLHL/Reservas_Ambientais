@@ -126,34 +126,37 @@ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
                         name="idUsuario">
 
                         <div class="form-group">
-                            <label for="unidade">
-                                Unidade de conservação
-                            </label>
+                        <label for="unidade">
+                            Unidade de conservação
+                        </label>
 
-                            <select id="unidade" name="unidade">
+                        <select
+                            id="unidade"
+                            name="unidade"
+                            required>
 
-                                <option value="">
-                                    Selecione uma unidade
-                                </option>
+                            <option value="">
+                                Selecione uma unidade
+                            </option>
 
-                                <option value="Parque Estadual das Araucárias">
-                                    Parque Estadual das Araucárias
-                                </option>
+                            <option value="1">
+                                Reserva Verde
+                            </option>
 
-                                <option value="Reserva Estadual da Canela Preta">
-                                    Reserva Estadual da Canela Preta
-                                </option>
+                            <option value="3">
+                                Parque Nacional Araucárias
+                            </option>
 
-                                <option value="Parque Estadual Acaraí">
-                                    Parque Estadual Acaraí
-                                </option>
+                            <option value="4">
+                                Reserva Mata Atlântica
+                            </option>
 
-                                <option value="Reserva Estadual do Sassafrás">
-                                    Reserva Estadual do Sassafrás
-                                </option>
+                            <option value="5">
+                                Reserva Estadual do Sassafrás
+                            </option>
 
-                            </select>
-                        </div>
+                        </select>
+                    </div>
 
                     <div class="form-group">
                         <label for="titulo">
@@ -168,7 +171,7 @@ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
                     </div>
 
                     <div class="form-group">
-                        <label for="descricao">
+                        <label for="descricao" type="text">
                             Descrição detalhada
                         </label>
 

@@ -10,6 +10,23 @@ exports.listar = (req, res) => {
     });
 };
 
+exports.listarPorUnidade = (req, res) => {
+
+    const { id } = req.params;
+
+    Comunicacao.listarPorUnidade(
+        id,
+        (erro, resultado) => {
+
+            if (erro) {
+                return res.status(500).json(erro);
+            }
+
+            res.json(resultado);
+        }
+    );
+};
+
 exports.buscarPorId = (req, res) => {
     Comunicacao.buscarPorId(req.params.id, (erro, resultado) => {
         if (erro) {

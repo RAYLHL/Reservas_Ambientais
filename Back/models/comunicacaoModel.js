@@ -1,7 +1,28 @@
 const db = require('../config/db');
 
 exports.listar = (retorno) => {
-    db.query('SELECT * FROM comunicacao', retorno);
+    db.query(`
+        SELECT
+            c.*,
+            i.nome
+        FROM comunicacao c
+        INNER JOIN individuo i
+            ON c.id_individuo = i.id
+        ORDER BY c.id DESC
+    `, retorno);
+};
+
+exports.listarPorUnidade = (idUnidade, retorno) => {
+    db.query(`
+        SELECT
+            c.*,
+            i.nome
+        FROM comunicacao c
+        INNER JOIN individuo i
+            ON c.id_individuo = i.id
+        WHERE c.id_unidade_conservacao = ?
+        ORDER BY c.id DESC
+    `, [idUnidade], retorno);
 };
 
 exports.buscarPorId = (id, retorno) => {

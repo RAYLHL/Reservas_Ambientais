@@ -87,73 +87,45 @@ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <!-- COMUNICADOS -->
 
         <aside class="feed-comunicados">
-            <h2>Últimos Comunicados</h2>
-            
-           <div class="comunicado-card">
-              <div class="comunicado-topo">
+    <h2>Últimos Comunicados</h2>
+
+    <div id="lista-comunicados">
+
+        <div class="comunicado-card">
+            <div class="comunicado-topo">
                 <div class="usuario-info">
                     <img src="img/user.png" alt="Usuário">
                     <div>
-                        <h4>João Silva</h4>
-                        <span>há 2 horas</span>
+                        <h4>Nome do usuário</h4>
+                        <span>Data e hora</span>
                     </div>
                 </div>
-                <a href="index.html" class="btn-detalhes" title="Ver detalhes do comunicado">
-                  <img src="img/icon-seta.png" alt="Ver detalhes">
-                </a>
-             </div>
-              <h3>Trilha bloqueada</h3>
-              <p>
-                  Árvore caída impedindo a passagem de visitantes.
-              </p>
-            </div>
 
-            <div class="comunicado-card">
-              <div class="comunicado-topo">
-                <div class="usuario-info">
-                    <img src="img/user.png" alt="Usuário">
-                    <div>
-                        <h4>João Silva</h4>
-                        <span>há 2 horas</span>
-                    </div>
-                </div>
-                <a href="index.html" class="btn-detalhes" title="Ver detalhes do comunicado">
-                  <img src="img/icon-seta.png" alt="Ver detalhes">
-                </a>
-             </div>
-              <h3>Trilha bloqueada</h3>
-              <p>
-                  Árvore caída impedindo a passagem de visitantes.
-              </p>
-            </div>
+                <a href="index.html"
+                   class="btn-detalhes"
+                   title="Ver detalhes do comunicado">
 
-            <div class="comunicado-card">
-              <div class="comunicado-topo">
-                <div class="usuario-info">
-                    <img src="img/user.png" alt="Usuário">
-                    <div>
-                        <h4>João Silva</h4>
-                        <span>há 2 horas</span>
-                    </div>
-                </div>
-                <a href="index.html" class="btn-detalhes" title="Ver detalhes do comunicado">
-                  <img src="img/icon-seta.png" alt="Ver detalhes">
-                </a>
-             </div>
-              <h3>Trilha bloqueada</h3>
-              <p>
-                  Árvore caída impedindo a passagem de visitantes.
-              </p>
-            </div>
-
-            <div class="comunicados-footer">
-                <a href="novo-comunicado.html" class="btn-comunicado">
-                    Enviar Comunicado
+                    <img src="img/icon-seta.png"
+                         alt="Ver detalhes">
                 </a>
             </div>
-        </aside>
-    </main>
 
+            <h3>Título do comunicado</h3>
+
+            <p>
+                Descrição do comunicado.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="comunicados-footer">
+        <a href="novo-comunicado.html" class="btn-comunicado">
+            Enviar Comunicado
+        </a>
+    </div>
+</aside>
+    <script src="js/home.js"></script>
     <script src="js/notificacoes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     
