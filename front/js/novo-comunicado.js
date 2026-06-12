@@ -59,7 +59,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
     // Limpa formulário após 1 segundo
     setTimeout(() => {
-
+        window.location.href = "home.html";
         document.querySelector("form").reset();
 
         // Mantém a unidade preenchida

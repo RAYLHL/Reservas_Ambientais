@@ -94,23 +94,26 @@ document
                 .getElementById("formComunicado")
                 .reset();
 
-        } catch (erro) {
+            // Redireciona para a página inicial após 2 segundos
+            setTimeout(() => {
+                window.location.href = "home.html";
+            }, 2000);
 
-            mostrarToast(
-                erro.message || "Erro ao enviar comunicado.",
-                "erro"
-            );
+            } catch (erro) {
 
-        }
+                mostrarToast(
+                    erro.message || "Erro ao enviar comunicado.",
+                    "erro"
+                );
 
-    });
+            }
 
-        } catch {
+            });
 
-            mostrarToast("ID não encontrado.", "erro");
+            } catch {
 
-        }
+                mostrarToast("ID não encontrado.", "erro");
 
-    });
+            }
 
-    
+            });

@@ -163,6 +163,10 @@ button,
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
+    a {
+    text-decoration: none;
+    color: inherit;
+}
 }
 
 button:hover,
@@ -250,6 +254,13 @@ button:hover,
     z-index: 999;
 }
 
+@media (min-width: 1000px) {
+
+    .cadastro-container{
+        margin-bottom: 200px;
+    }
+    
+}
 /* =========================
    RESPONSIVO
 ========================= */
