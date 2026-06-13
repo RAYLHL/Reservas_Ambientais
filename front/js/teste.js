@@ -1,7 +1,7 @@
  try {
 
             const resposta = await fetch(
-                "http://localhost:3000/individuos",
+                "http://localhost:4000/individuos",
                 {
                     method: "GET",
                     headers: {

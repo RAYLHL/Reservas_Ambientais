@@ -3,7 +3,7 @@ async function carregarComunicados() {
     try {
 
         const resposta = await fetch(
-            "http://localhost:3000/comunicacoes"
+            "http://localhost:4000/comunicacoes"
         );
 
         if (!resposta.ok) {
@@ -12,11 +12,13 @@ async function carregarComunicados() {
 
         const comunicados = await resposta.json();
 
+        console.log(comunicados)
+        
         const lista =
             document.getElementById("lista-comunicados");
 
         lista.innerHTML = "";
-
+        
         comunicados.forEach(comunicado => {
 
             lista.innerHTML += `
@@ -41,7 +43,7 @@ async function carregarComunicados() {
                         </div>
 
                         <a
-                            href="index.html"
+                            href="unidades.html"
                             class="btn-detalhes"
                             title="Ver detalhes">
 

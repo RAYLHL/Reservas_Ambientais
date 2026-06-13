@@ -7,7 +7,7 @@ async function carregarComunicados() {
        console.log("Entrou na função");
 
         const resposta = await fetch(
-            "http://localhost:4000/comunicacoes/unidade/1"
+            "http://localhost:4000/comunicacoes/unidade/4"
         );
 
         console.log("Resposta:", resposta);
