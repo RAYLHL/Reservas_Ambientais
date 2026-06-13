@@ -8,7 +8,7 @@ document.getElementById("btnValidar").addEventListener("click", async () => {
     }
 
     try {
-        const resposta = await fetch(`http://localhost:4000/individuos/${id}`);
+        const resposta = await fetch(`https://back-reservas-ambientais-production.up.railway.app/individuos/${id}`);
 
         if (!resposta.ok) throw new Error();
 
@@ -33,7 +33,7 @@ document.getElementById("formComunicado").addEventListener("submit", async (even
     const status        = 1;
 
     try {
-        const resposta = await fetch("http://localhost:4000/comunicacoes", {
+        const resposta = await fetch("https://back-reservas-ambientais-production.up.railway.app/comunicacoes", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

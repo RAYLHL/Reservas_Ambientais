@@ -1,7 +1,7 @@
  try {
 
             const resposta = await fetch(
-                "http://localhost:4000/individuos",
+                "https://back-reservas-ambientais-production.up.railway.app/individuos",
                 {
                     method: "GET",
                     headers: {

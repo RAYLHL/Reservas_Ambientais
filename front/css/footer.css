@@ -75,6 +75,17 @@
     opacity: .8;
 }
 
+.link-teammates {
+    color: var(--branco-fonte);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-teammates:hover {
+    color: var(--verde-detalhes);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 
     .footer-content {

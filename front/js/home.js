@@ -3,7 +3,7 @@ async function carregarComunicados() {
     try {
 
         const resposta = await fetch(
-            "http://localhost:4000/comunicacoes"
+            "https://back-reservas-ambientais-production.up.railway.app/comunicacoes"
         );
 
         if (!resposta.ok) {
@@ -28,7 +28,7 @@ async function carregarComunicados() {
 
                         <div class="usuario-info">
 
-                            <img src="img/user.png" alt="Usuário">
+                            <img src="img/user.webp" alt="Usuário">
 
                             <div>
                                 <h4>${comunicado.nome}</h4>
@@ -48,7 +48,7 @@ async function carregarComunicados() {
                             title="Ver detalhes">
 
                             <img
-                                src="img/icon-seta.png"
+                                src="img/icon-seta.webp"
                                 alt="Ver detalhes">
 
                         </a>

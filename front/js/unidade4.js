@@ -7,7 +7,7 @@ async function carregarComunicados() {
        console.log("Entrou na função");
 
         const resposta = await fetch(
-            "http://localhost:4000/comunicacoes/unidade/4"
+            "https://back-reservas-ambientais-production.up.railway.app/comunicacoes/unidade/4"
         );
 
         console.log("Resposta:", resposta);
@@ -38,7 +38,7 @@ async function carregarComunicados() {
 
                         <div class="usuario-info">
 
-                            <img src="img/user.png" alt="Usuário">
+                            <img src="img/user.webp" alt="Usuário">
 
                             <div>
                                 <h4>${comunicado.nome}</h4>
