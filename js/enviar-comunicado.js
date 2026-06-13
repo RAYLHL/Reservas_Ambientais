@@ -56,7 +56,7 @@ document.getElementById("formComunicado").addEventListener("submit", async (even
         document.getElementById("formComunicado").reset();
 
         setTimeout(() => {
-            window.location.href = "home.html";
+            window.location.href = "index.html";
         }, 1850);
 
     } catch (erro) {
