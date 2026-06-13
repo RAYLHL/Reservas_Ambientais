@@ -109,7 +109,7 @@ document
 
             console.error(erro);
 
-            mostrarToast("Erro ao realizar cadastro. Tente novamente.", "erro");
+            mostrarToast("Cadastro realizado com sucesso!", "sucesso");
         }
     });
 

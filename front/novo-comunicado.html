@@ -96,7 +96,7 @@ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <strong id="idGerado"></strong>
 
         <p>
-            Guarde este número para realizar futuras comunicações.
+            COPIE este número para realizar futuras comunicações.
         </p>
 
         <button
@@ -104,126 +104,13 @@ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
             id="btnAbrirComunicado"
             class="btn-comunicado">
 
-            Continuar
-
+            <a href="enviar-comunicado.html">
+                Enviar Comunicado
+            </a>
         </button>
 
     </div>
 
-    <!-- FORMULÁRIO -->
-    <div id="form-comunicado" style="display:none;">
-
-        <div class="container-geral">
-
-            <div class="form-container">
-
-                <form action="#" method="POST">
-
-                    <!-- ID DO USUÁRIO -->
-                    <input
-                        type="hidden"
-                        id="idUsuario"
-                        name="idUsuario">
-
-                        <div class="form-group">
-                        <label for="unidade">
-                            Unidade de conservação
-                        </label>
-
-                        <select
-                            id="unidade"
-                            name="unidade"
-                            required>
-
-                            <option value="">
-                                Selecione uma unidade
-                            </option>
-
-                            <option value="1">
-                                Reserva Verde
-                            </option>
-
-                            <option value="3">
-                                Parque Nacional Araucárias
-                            </option>
-
-                            <option value="4">
-                                Reserva Mata Atlântica
-                            </option>
-
-                            <option value="5">
-                                Reserva Estadual do Sassafrás
-                            </option>
-
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="titulo">
-                            Título da comunicação
-                        </label>
-
-                        <input
-                            type="text"
-                            id="titulo"
-                            name="titulo"
-                            placeholder="Ex: Descreva o problema">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="descricao" type="text">
-                            Descrição detalhada
-                        </label>
-
-                        <textarea
-                            id="descricao"
-                            name="descricao"
-                            rows="4">
-                        </textarea>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="form-group">
-                            <label for="email">
-                                Seu email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="seuemail@gmail.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="data">
-                                Data e hora
-                            </label>
-
-                            <input
-                                type="date"
-                                id="data"
-                                name="data"
-                                placeholder="XX/XX/XXXX">
-                        </div>
-
-                    </div>
-
-                    <button type="submit">
-                        Enviar Comunicado
-                    </button>
-
-                    <p class="footer-text">
-                        Sua comunicação será encaminhada aos
-                        administradores responsáveis pela unidade
-                        selecionada.
-                    </p>
-                </form>
-            </div>
-        </div>
-
-    </div>
     <footer class="footer">
     <div class="footer-content">
 

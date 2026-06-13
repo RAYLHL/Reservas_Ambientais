@@ -57,7 +57,7 @@ document.getElementById("formComunicado").addEventListener("submit", async (even
 
         setTimeout(() => {
             window.location.href = "home.html";
-        }, 2000);
+        }, 1850);
 
     } catch (erro) {
         mostrarToast(erro.message || "Erro ao enviar comunicado.", "erro");

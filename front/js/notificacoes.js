@@ -12,7 +12,7 @@ function mostrarToast(mensagem, tipo = "erro") {
 
     Toastify({
         text: mensagem,
-        duration: 3000,
+        duration: 1700,
         close: false,
         gravity: "top",
         position: "right",
